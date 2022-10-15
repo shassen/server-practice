@@ -1,0 +1,22 @@
+{
+  "name": "errunds-app",
+  "version": "1.0.0",
+  "description": "errunds assessment back-end directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:create": "psql -d errunds_db -f db/schema.sql",
+    "db:seed": "psql -d errunds_db -f db/seed.sql",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
+    "pg-promise": "^8.4.6"
+  }
+}
